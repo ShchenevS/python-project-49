@@ -2,6 +2,7 @@ import prompt
 import brain_games.even
 import brain_games.calc
 import brain_games.gcd
+import brain_games.progr
 
 
 def engine(purpose):
@@ -15,6 +16,8 @@ def engine(purpose):
             brain_games.calc.question()
         case 'gcd':
             brain_games.gcd.question()
+        case 'progr':
+            brain_games.progr.question()
     count = 0
     while count < 3:
         match purpose:
@@ -24,6 +27,8 @@ def engine(purpose):
                 result = brain_games.calc.function()
             case 'gcd':
                 result = brain_games.gcd.function()
+            case 'progr':
+                result = brain_games.progr.function()
         if result[0]:
             print("Correct!")
             count += 1
