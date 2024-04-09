@@ -3,6 +3,7 @@ import brain_games.even
 import brain_games.calc
 import brain_games.gcd
 import brain_games.progr
+import brain_games.prime
 
 
 def engine(purpose):
@@ -18,6 +19,8 @@ def engine(purpose):
             brain_games.gcd.question()
         case 'progr':
             brain_games.progr.question()
+        case 'prime':
+            brain_games.prime.question()
     count = 0
     while count < 3:
         match purpose:
@@ -29,6 +32,8 @@ def engine(purpose):
                 result = brain_games.gcd.function()
             case 'progr':
                 result = brain_games.progr.function()
+            case 'prime':
+                result = brain_games.prime.function()
         if result[0]:
             print("Correct!")
             count += 1
