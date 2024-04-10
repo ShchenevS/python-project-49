@@ -14,7 +14,7 @@ def function():
     print(f'Question: {number1} {number2}')
     divisor = min(abs(number1), abs(number2))
     if divisor == 0:
-        divisor == 1
+        divisor = 1
     while divisor > 1:
         if number1 % divisor == 0 and number2 % divisor == 0:
             break
