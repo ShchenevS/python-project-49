@@ -38,7 +38,8 @@ def engine(purpose):
             print("Correct!")
             count += 1
         else:
-            print(f"'{result[2]}' is wrong answer ;(. Correct answer was '{result[1]}'.")
+            text = 'is wrong answer ;(. Correct answer was'
+            print(f"'{result[2]}' {text} '{result[1]}'.")
             print(f"Let's try again, {name}!")
             break
     if count == 3:
