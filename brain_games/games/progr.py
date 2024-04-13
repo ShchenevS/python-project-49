@@ -2,11 +2,11 @@ import random
 import prompt
 
 
-def question():
+def task():
     print('What number is missing in the progression?')
 
 
-def function():
+def exercise():
     start_1 = 0
     stop_1 = 100
     progr_start = random.randint(start_1, stop_1)

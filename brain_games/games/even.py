@@ -2,11 +2,11 @@ import random
 import prompt
 
 
-def question():
+def task():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
-def function():
+def exercise():
     num_start = 0
     num_stop = 100
     number = random.randint(num_start, num_stop)

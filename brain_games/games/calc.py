@@ -2,11 +2,11 @@ import random
 import prompt
 
 
-def question():
+def task():
     print('What is the result of the expression?')
 
 
-def function():
+def exercise():
     num_start = 0
     num_stop = 100
     number1 = random.randint(num_start, num_stop)

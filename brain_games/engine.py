@@ -1,9 +1,9 @@
 import prompt
-import brain_games.even
-import brain_games.calc
-import brain_games.gcd
-import brain_games.progr
-import brain_games.prime
+import brain_games.games.even
+import brain_games.games.calc
+import brain_games.games.gcd
+import brain_games.games.progr
+import brain_games.games.prime
 
 
 def engine(purpose):
@@ -12,28 +12,28 @@ def engine(purpose):
     print(f"Hello, {name}!")
     match purpose:
         case 'even':
-            brain_games.even.question()
+            brain_games.games.even.task()
         case 'calc':
-            brain_games.calc.question()
+            brain_games.games.calc.task()
         case 'gcd':
-            brain_games.gcd.question()
+            brain_games.games.gcd.task()
         case 'progr':
-            brain_games.progr.question()
+            brain_games.games.progr.task()
         case 'prime':
-            brain_games.prime.question()
+            brain_games.games.prime.task()
     count = 0
     while count < 3:
         match purpose:
             case 'even':
-                result = brain_games.even.function()
+                result = brain_games.games.even.exercise()
             case 'calc':
-                result = brain_games.calc.function()
+                result = brain_games.games.calc.exercise()
             case 'gcd':
-                result = brain_games.gcd.function()
+                result = brain_games.games.gcd.exercise()
             case 'progr':
-                result = brain_games.progr.function()
+                result = brain_games.games.progr.exercise()
             case 'prime':
-                result = brain_games.prime.function()
+                result = brain_games.games.prime.exercise()
         if result[0]:
             print("Correct!")
             count += 1

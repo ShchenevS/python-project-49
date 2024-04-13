@@ -2,11 +2,11 @@ import random
 import prompt
 
 
-def question():
+def task():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def function():
+def exercise():
     start = 0
     stop = 100
     number = random.randint(start, stop)
