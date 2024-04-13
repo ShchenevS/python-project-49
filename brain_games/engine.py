@@ -26,21 +26,22 @@ def engine(purpose):
     while count < amount_of_try:
         match purpose:
             case 'even':
-                result = brain_games.games.even.exercise()
+                correct_answer = brain_games.games.even.exercise()
             case 'calc':
-                result = brain_games.games.calc.exercise()
+                correct_answer = brain_games.games.calc.exercise()
             case 'gcd':
-                result = brain_games.games.gcd.exercise()
+                correct_answer = brain_games.games.gcd.exercise()
             case 'progr':
-                result = brain_games.games.progr.exercise()
+                correct_answer = brain_games.games.progr.exercise()
             case 'prime':
-                result = brain_games.games.prime.exercise()
-        if result[0]:
+                correct_answer = brain_games.games.prime.exercise()
+        user_answer = prompt.string('Your answer: ')
+        if user_answer == str(correct_answer):
             print("Correct!")
             count += 1
         else:
             text = 'is wrong answer ;(. Correct answer was'
-            print(f"'{result[2]}' {text} '{result[1]}'.")
+            print(f"'{user_answer}' {text} '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
     if count == 3:

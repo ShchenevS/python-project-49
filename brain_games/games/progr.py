@@ -22,5 +22,4 @@ def exercise():
     progr[hidden_index] = ".."
     quest = ' '.join(progr)
     print(f'Question: {quest}')
-    user_answer = prompt.string('Your answer: ')
-    return (str(correct_answer) == user_answer, correct_answer, user_answer)
+    return (correct_answer)

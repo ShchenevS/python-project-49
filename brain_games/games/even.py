@@ -15,5 +15,4 @@ def exercise():
         correct_answer = "yes"
     else:
         correct_answer = "no"
-    user_answer = prompt.string('Your answer: ')
-    return (correct_answer == user_answer, correct_answer, user_answer)
+    return (correct_answer)

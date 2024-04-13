@@ -19,5 +19,4 @@ def exercise():
             if number % i == 0:
                 correct_answer = "no"
                 break
-    user_answer = prompt.string('Your answer: ')
-    return (correct_answer == user_answer, correct_answer, user_answer)
+    return (correct_answer)

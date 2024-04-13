@@ -21,5 +21,4 @@ def exercise():
             correct_answer = number1 - number2
         case '*':
             correct_answer = number1 * number2
-    user_answer = prompt.string('Your answer: ')
-    return (str(correct_answer) == user_answer, correct_answer, user_answer)
+    return (correct_answer)
