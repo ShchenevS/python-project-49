@@ -1,5 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/ShchenevS/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ShchenevS/python-project-49/actions)
+Codeclimate badge:
+<a href="https://codeclimate.com/github/ShchenevS/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/3e8f38acc88e0c1f1aa8/maintainability" /></a>
 Asciinema for step 5:
 <a href="https://asciinema.org/a/EORdPsPFBb88yMluXLmNoDB1G" target="_blank"><img src="https://asciinema.org/a/EORdPsPFBb88yMluXLmNoDB1G.svg" /></a>
 Asciinema for step 6:
