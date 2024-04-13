@@ -22,7 +22,8 @@ def engine(purpose):
         case 'prime':
             brain_games.games.prime.task()
     count = 0
-    while count < 3:
+    amount_of_try = 3
+    while count < amount_of_try:
         match purpose:
             case 'even':
                 result = brain_games.games.even.exercise()
