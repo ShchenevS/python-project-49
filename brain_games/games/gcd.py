@@ -11,13 +11,17 @@ def exercise():
     number1 = random.randint(num_start, num_stop)
     number2 = random.randint(num_start, num_stop)
     print(f'Question: {number1} {number2}')
-    if min(abs(number1), abs(number2)) == 0:
+    correct_answer = gcd_calc(number1, number2)
+    return (correct_answer)
+
+
+def gcd_calc(num1, num2):
+    if min(abs(num1), abs(num2)) == 0:
         divisor = 1
     else:
-        divisor = min(abs(number1), abs(number2))
+        divisor = min(abs(num1), abs(num2))
         while divisor > 1:
-            if number1 % divisor == 0 and number2 % divisor == 0:
+            if num1 % divisor == 0 and num2 % divisor == 0:
                 break
             divisor -= 1
-    correct_answer = divisor
-    return (correct_answer)
+    return divisor

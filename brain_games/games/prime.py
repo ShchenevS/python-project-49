@@ -10,12 +10,16 @@ def exercise():
     stop = 100
     number = random.randint(start, stop)
     print(f'Question: {number}')
-    if number < 2:
-        correct_answer = "no"
-    else:
-        correct_answer = "yes"
-        for i in range(2, number // 2 + 1):
-            if number % i == 0:
-                correct_answer = "no"
-                break
+    correct_answer = is_prime(number)
     return (correct_answer)
+
+def is_prime(num):
+    if num < 2:
+        answer = "no"
+    else:
+        answer = "yes"
+        for i in range(2, num // 2 + 1):
+            if num % i == 0:
+                answer = "no"
+                break
+    return (answer)
