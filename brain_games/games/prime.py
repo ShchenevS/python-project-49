@@ -13,6 +13,7 @@ def exercise():
     correct_answer = is_prime(number)
     return (correct_answer)
 
+
 def is_prime(num):
     if num < 2:
         answer = "no"
