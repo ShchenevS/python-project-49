@@ -1,4 +1,5 @@
 import prompt
+from brain_games.constant import AMOUNT_OF_TRY
 
 
 def engine(purpose):
@@ -7,8 +8,7 @@ def engine(purpose):
     print(f"Hello, {name}!")
     purpose.task()
     count = 0
-    amount_of_try = 3
-    while count < amount_of_try:
+    while count < AMOUNT_OF_TRY:
         correct_answer = purpose.exercise()
         user_answer = prompt.string('Your answer: ')
         if user_answer == str(correct_answer):
