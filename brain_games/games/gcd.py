@@ -2,7 +2,7 @@ import random
 
 
 def task():
-    return('Find the greatest common divisor of given numbers.')
+    return ('Find the greatest common divisor of given numbers.')
 
 
 def exercise():

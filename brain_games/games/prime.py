@@ -2,7 +2,7 @@ import random
 
 
 def task():
-    return('Answer "yes" if given number is prime. Otherwise answer "no".')
+    return ('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def exercise():

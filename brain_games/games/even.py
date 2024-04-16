@@ -2,7 +2,7 @@ import random
 
 
 def task():
-    return('Answer "yes" if the number is even, otherwise answer "no".')
+    return ('Answer "yes" if the number is even, otherwise answer "no".')
 
 
 def exercise():

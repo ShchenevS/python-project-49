@@ -2,7 +2,7 @@ import random
 
 
 def task():
-    return('What number is missing in the progression?')
+    return ('What number is missing in the progression?')
 
 
 def exercise():

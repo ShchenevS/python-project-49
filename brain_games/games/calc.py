@@ -2,7 +2,7 @@ import random
 
 
 def task():
-    return('What is the result of the expression?')
+    return ('What is the result of the expression?')
 
 
 def exercise():
