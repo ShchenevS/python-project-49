@@ -4,7 +4,7 @@ from brain_games.games import progr
 
 
 def main():
-    brain_games.engine.engine(progr)
+    brain_games.engine.run_games(progr)
 
 
 if __name__ == '__main__':
