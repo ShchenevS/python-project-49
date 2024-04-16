@@ -2,7 +2,7 @@ import random
 
 
 def task():
-    print('Find the greatest common divisor of given numbers.')
+    return('Find the greatest common divisor of given numbers.')
 
 
 def exercise():
@@ -10,9 +10,9 @@ def exercise():
     num_stop = 100
     number1 = random.randint(num_start, num_stop)
     number2 = random.randint(num_start, num_stop)
-    print(f'Question: {number1} {number2}')
+    question = f'Question: {number1} {number2}'
     correct_answer = gcd_calc(number1, number2)
-    return (correct_answer)
+    return (question, correct_answer)
 
 
 def gcd_calc(num1, num2):

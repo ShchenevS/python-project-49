@@ -2,7 +2,7 @@ import random
 
 
 def task():
-    print('What is the result of the expression?')
+    return('What is the result of the expression?')
 
 
 def exercise():
@@ -12,7 +12,7 @@ def exercise():
     number2 = random.randint(num_start + 1, num_stop)
     op_range = '+-*'
     operator = random.choice(op_range * 10)
-    print(f'Question: {number1} {operator} {number2}')
+    question = f'Question: {number1} {operator} {number2}'
     match operator:
         case '+':
             correct_answer = number1 + number2
@@ -20,4 +20,4 @@ def exercise():
             correct_answer = number1 - number2
         case '*':
             correct_answer = number1 * number2
-    return (correct_answer)
+    return (question, correct_answer)

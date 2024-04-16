@@ -2,16 +2,16 @@ import random
 
 
 def task():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    return('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def exercise():
     start = 0
     stop = 100
     number = random.randint(start, stop)
-    print(f'Question: {number}')
+    question = f'Question: {number}'
     correct_answer = is_prime(number)
-    return (correct_answer)
+    return (question, correct_answer)
 
 
 def is_prime(num):

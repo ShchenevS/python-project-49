@@ -2,7 +2,7 @@ import random
 
 
 def task():
-    print('What number is missing in the progression?')
+    return('What number is missing in the progression?')
 
 
 def exercise():
@@ -20,5 +20,5 @@ def exercise():
     correct_answer = progr[hidden_index]
     progr[hidden_index] = ".."
     quest = ' '.join(progr)
-    print(f'Question: {quest}')
-    return (correct_answer)
+    question = f'Question: {quest}'
+    return (question, correct_answer)
